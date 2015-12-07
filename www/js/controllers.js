@@ -42,7 +42,10 @@ angular.module('starter.controllers', [])
 })
 
 .controller('PlaylistsCtrl', function($scope, $cordovaToast) {
+  console.log('Teste');
+
   $cordovaToast.show('Um mensagem aqui', 'short', 'bottom');
+  
   $scope.playlists = [
     { title: 'Reggae', id: 1 },
     { title: 'Chill', id: 2 },
